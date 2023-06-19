@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { signInWithGooglePopUp, createUserDocumentFromAUth } from '../../utils/firebase/firebase.utils';
+import { signInWithGooglePopUp,  createUserDocumentFromAUth } from '../../utils/firebase/firebase.utils';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -13,6 +13,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { getRedirectResult } from 'firebase/auth';
+import { useEffect } from 'react';
 
 
 
@@ -21,9 +23,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const defaultTheme = createTheme();
 
 export default function SignIn() {
+ 
   const logGoogleUser = async () => {
     const { user } = await signInWithGooglePopUp();
-    createUserDocumentFromAUth(user);
+    const userDocRef = await createUserDocumentFromAUth(user);
   }
 
   const handleSubmit = (event) => {
@@ -95,6 +98,7 @@ export default function SignIn() {
             >
               Sign In with Google
             </Button>
+          
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
