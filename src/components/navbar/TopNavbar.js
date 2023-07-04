@@ -19,7 +19,7 @@ const icons = [
 
 const TopNavbar = () => {
   return (
-    <AppBar position='static' sx={{ bgcolor: '#0E4062' }}>
+    <AppBar position='static' color='primary'>
       <Toolbar>
         {icons.map((icon) => (
           <IconButton
@@ -36,7 +36,7 @@ const TopNavbar = () => {
 
         <Box sx={{ flexGrow: 1 }} />
 
-        <IconButton sx={{ bgcolor: '#F9AE19', marginRight: '8px' }}>
+        <IconButton color='secondary' sx={{ marginRight: '8px' }}>
           <PhoneIcon />
         </IconButton>
         <Typography variant='body1' color='inherit' sx={{ marginRight: '28px' }}>
@@ -47,17 +47,19 @@ const TopNavbar = () => {
           component='a'
           href='/signin'
           variant='contained'
-          sx={{ bgcolor: '#F9AE19', marginLeft: '18px' }}
+          color = 'secondary'
+          sx={{  marginLeft: '18px' }}
         >
-          Log In
+         <Typography fontFamily={'Montserrat-light'}> Log In </Typography>
         </Button>
         <Button
           component='a'
           href='/signup'
           variant='contained'
-          sx={{ bgcolor: '#F9AE19', marginLeft: '18px' }}
+          color = 'secondary'
+          sx={{ marginLeft: '18px' }}
         >
-          Sign Up
+          <Typography fontFamily={'Montserrat-light'}>Sign Up</Typography>
         </Button>
       </Toolbar>
     </AppBar>

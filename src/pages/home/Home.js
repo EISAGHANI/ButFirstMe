@@ -1,6 +1,10 @@
 import React from 'react'
 import Header from '../../components/header/Header'
-import Album from '../../components/album/Album'
+import ServicesCarousel from '../../components/menus/ServicesCarousel'
+import Membership from '../../components/menus/Membership'
+import AboutUs from '../../components/menus/AboutUs'
+import Testimonials from '../../components/menus/Testimonials'
+
 
 
 
@@ -9,7 +13,11 @@ const Home = () => {
   return (
     <div>
         <Header />
-        <Album />
+        <ServicesCarousel />
+        <Membership />
+        <AboutUs />
+        <Testimonials />
+    
     </div>
   )
 }
