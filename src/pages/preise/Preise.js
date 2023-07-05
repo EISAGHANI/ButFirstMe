@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Services = () => {
+const PREISE = () => {
   return (
     <div>
         <h1>
-        I am the services page
+        I am the PREISE page
         </h1>
     </div>
   )
 }
 
-export default Services
+export default PREISE

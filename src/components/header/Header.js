@@ -9,7 +9,7 @@ import backgroundImage2 from '../../assets/Header_material/gradient-dark-blue-fu
 
 const Header = () => {
   return (
-    <div className="header" style={{ width: '100%', margin: 0 }}>
+    <div className="header" style={{ width: '100%', margin: 0, height: '80vh'}}>
       <Carousel
         showArrows={true}
         showStatus={false}

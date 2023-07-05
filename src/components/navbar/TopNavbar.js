@@ -1,20 +1,20 @@
 import { AppBar, Toolbar, IconButton, Typography, Box } from '@mui/material';
 import { SvgIcon } from '@mui/material';
-import { ReactComponent as FbIcon } from '../../assets/Header_material/f.svg';
-import { ReactComponent as TwIcon } from '../../assets/Header_material/tw.svg';
-import { ReactComponent as GoIcon } from '../../assets/Header_material/g+.svg';
-import { ReactComponent as LiIcon } from '../../assets/Header_material/in.svg';
-import { ReactComponent as TubeIcon } from '../../assets/Header_material/Tube.svg';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GoogleIcon from '@mui/icons-material/Google';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Button from '@mui/material/Button';
 import React from 'react';
 
 const icons = [
-  { id: 1, component: FbIcon, link: 'https://www.facebook.com/' },
-  { id: 2, component: TwIcon, link: 'https://www.twitter.com/' },
-  { id: 3, component: GoIcon, link: 'https://plus.google.com/' },
-  { id: 4, component: LiIcon, link: 'https://www.linkedin.com/' },
-  { id: 5, component: TubeIcon, link: 'https://www.youtube.com/' },
+  { id: 1, component: FacebookIcon, link: 'https://www.facebook.com/' },
+  { id: 2, component: TwitterIcon, link: 'https://www.twitter.com/' },
+  { id: 3, component: GoogleIcon, link: 'https://plus.google.com/' },
+  { id: 4, component: LinkedInIcon, link: 'https://www.linkedin.com/' },
+  { id: 5, component: YouTubeIcon, link: 'https://www.youtube.com/' },
 ];
 
 const TopNavbar = () => {
@@ -30,7 +30,7 @@ const TopNavbar = () => {
             key={icon.id}
             sx={{  marginRight: '2px' }}
           >
-            <SvgIcon component={icon.component} />
+            <SvgIcon component={icon.component} color="secodary"/>
           </IconButton>
         ))}
 

@@ -21,7 +21,7 @@ const StyledLink = styled(Link)(({ theme, isActive }) => ({
     bottom: 0,
     left: 0,
     width: isActive ? '100%' : 0,
-    height: '2px',
+    height: '8px',
     backgroundColor: "#F9AE19",
     transition: 'width 0.3s ease',
   },
@@ -45,20 +45,27 @@ const Navbar = () => {
 
             <nav style={{ display: 'flex' }}>
 
-              <StyledLink to="/services" isActive={location.pathname === '/services'}>
-                <Typography variant="subtitle1" fontFamily="Montserrat-Bold"  sx={{ fontSize: "25px"}}>Services</Typography>
+            <StyledLink to="/" isActive={location.pathname === '/'}>
+                <Typography variant="subtitle1" fontFamily="Montserrat-Bold"  sx={{ fontSize: "25px"}}>Home</Typography>
+              </StyledLink>
+              <StyledLink to="/preise" isActive={location.pathname === '/preise'}>
+                <Typography variant="subtitle1" fontFamily="Montserrat-Bold"  sx={{ fontSize: "25px"}}>Preise</Typography>
               </StyledLink>
 
-              <StyledLink to="/contact" isActive={location.pathname === '/contact'}>
-                <Typography variant="subtitle1" fontFamily="Montserrat-Bold"sx={{ fontSize: "25px"}} >Contact</Typography>
+              <StyledLink to="/magazin" isActive={location.pathname === '/magazin'}>
+                <Typography variant="subtitle1" fontFamily="Montserrat-Bold"sx={{ fontSize: "25px"}} >Magazin</Typography>
               </StyledLink>
 
-              <StyledLink to="/about" isActive={location.pathname === '/about'}>
-                <Typography variant="subtitle1" fontFamily="Montserrat-Bold" sx={{ fontSize: "25px"}}>About</Typography>
+              <StyledLink to="/uberuns" isActive={location.pathname === '/uberuns'}>
+                <Typography variant="subtitle1" fontFamily="Montserrat-Bold" sx={{ fontSize: "25px"}}>Über Uns</Typography>
               </StyledLink>
 
-              <StyledLink to="/blog" isActive={location.pathname === '/blog'}>
-                <Typography variant="subtitle1" fontFamily="Montserrat-Bold" sx={{ fontSize: "25px" }} >Blog</Typography>
+              <StyledLink to="/kontakt" isActive={location.pathname === '/kontakt'}>
+                <Typography variant="subtitle1" fontFamily="Montserrat-Bold" sx={{ fontSize: "25px" }} >Kontakt</Typography>
+              </StyledLink>
+
+              <StyledLink to="/shop" isActive={location.pathname === '/shop'}>
+                <Typography variant="subtitle1" fontFamily="Montserrat-Bold" sx={{ fontSize: "25px" }} >Shop</Typography>
               </StyledLink>
             </nav>
           </Toolbar>
