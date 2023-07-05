@@ -14,7 +14,7 @@ const StyledLink = styled(Link)(({ theme, isActive }) => ({
   color: 'inherit',
   marginRight: '16px',
   padding: '8px 16px',
-  fontWeight: isActive ? 'bold' : 'normal',
+  fontWeight: isActive ? 'normal' : 'bold',
   '&::after': {
     content: '""',
     position: 'absolute',
@@ -45,7 +45,7 @@ const Navbar = () => {
 
             <nav style={{ display: 'flex' }}>
 
-            <StyledLink to="/" isActive={location.pathname === '/'}>
+              <StyledLink to="/" isActive={location.pathname === '/'}>
                 <Typography variant="subtitle1" fontFamily="Montserrat-Bold"  sx={{ fontSize: "25px"}}>Home</Typography>
               </StyledLink>
               <StyledLink to="/preise" isActive={location.pathname === '/preise'}>

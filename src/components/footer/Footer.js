@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import { ReactComponent as ButfirstmeLogo } from '../../assets/Header_material/Logo_icon.svg';
 import { ReactComponent as ButfirstmeLogoText } from '../../assets/Header_material/logo_text.svg';
-import { Divider, Stack, Typography, Button, IconButton} from '@mui/material';
+import { Typography,  IconButton} from '@mui/material';
 import { Link } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';

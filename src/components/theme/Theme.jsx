@@ -3,7 +3,8 @@ import '../../assets/fonts.css'
 const arcPurple = "#0E4062";
 const arcYellow = "#F9AE19";
 const arcGreen = "#265626";
-const arcRed = "#E5281E"
+const arcRed = "#E5281E";
+const arcWhite = "#FFFFFF"
 
 export default createTheme({
     palette: {
@@ -11,7 +12,8 @@ export default createTheme({
             purple: `${arcPurple}`,
             yellow: `${arcYellow}`,
             green: `${arcGreen}`,
-            red: `${arcRed}`
+            red: `${arcRed}`,
+            white: `${arcWhite}`
         },
         primary: {
             main: `${arcPurple}`
@@ -20,7 +22,7 @@ export default createTheme({
             main: `${arcYellow}`
         },
         text: {
-            primary: '#FFFFFF',
+            primary: `${arcWhite}`,
 
         },
         action: {
@@ -32,7 +34,8 @@ export default createTheme({
         tab:{
             color: `${arcYellow}`
         },
-        fontFamily: "montserrat"
+        fontFamily: "montserrat",
+        
     }
 
 });
