@@ -3,14 +3,15 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import backgroundImage1 from '../../assets/Header_material/close-up-hand-with-painting-pallete.jpg';
+import backgroundImage1 from '../../assets/1 Home_header_content/hero_image.svg';
+import backgroundImageHeading from '../../assets/1 Home_header_content/Header_BG_solid.svg';
 import { Grid, Typography } from '@mui/material';
 import PublicIcon from '@mui/icons-material/Public';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 
 const Header = () => {
   return (
-    <Grid  Container sx={{width: '100vw', position: 'relative', left: '50%', transform: 'translateX(-50%)', backgroundImage: `url(${backgroundImage1})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '600px'}}>
+    <Grid  Container sx={{width: '100%', position: 'relative', left: '50%', transform: 'translateX(-50%)', backgroundImage: `url(${backgroundImage1})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '600px'}}>
           <Box height={120} display={'flex'} justifyContent={'right'} marginRight={10}>
                <Box lg ={4} sx={{border:'1px solid white', width: '50'}} display={'flex'} justifyContent={'center'} alignItems={'center'}>
                   <PublicIcon color='secondary'/>
@@ -30,16 +31,20 @@ const Header = () => {
                   </Button>
                </Box>
           </Box>
-          <Box height={30} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-              <Typography variant='h6' color={'white'}>
+          <Box height={40} display={'flex'}  justifyContent={'center'} alignItems={'center'}>
+              <Box  height={40} sx={{backgroundImage: `url(${backgroundImageHeading})`, backgroundSize: 'cover', backgroundPosition: 'left', width: '40%'}}/>
+              <Box >
+                <Typography variant='h4' color={'white'}>
                   DWIN WEG ZU
-              </Typography>
+                </Typography>
+              </Box> 
+              <Box  height={40} sx={{backgroundImage: `url(${backgroundImageHeading})`, backgroundSize: 'cover', backgroundPosition: 'right', width: '40%'}}/>
           </Box>
-          <Box height={60} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-                  <Typography height={30} color={'white'}>
+          <Box height={50} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+                  <Typography height={25} color={'white'}>
                     Kostenlos. Anonym.Hochwerig
                   </Typography>
-                  <Typography height={30} color={'white'}>
+                  <Typography height={25} color={'white'}>
                     Kostenlos. Anonym.Hochwerig
                   </Typography>
           </Box>
@@ -52,12 +57,21 @@ const Header = () => {
               </Button>
 
           </Box>
-          <Box height={300} display={'flex'}  flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+          <Box height={300} display={'flex'}  flexDirection={'column'}  alignItems={'center'}>
                   <Typography  color={'secondary'}>
                     Kostenlos. Anonym.Hochwerig
                   </Typography>
-                  <Typography  color={'white'}>
-                    lorem ipsum
+                  <Typography  color={'white'} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                    Bereit, dich selbst neu zu entdecken und deine mentale Stärke zu entfesseln?
+                    Wir sind hier, um dich auf deinem Weg zur persönlichen Entwicklung zu begleiten
+                    und dir die Werkzeuge zu geben, um ein erfülltes und ausgeglichenes Leben zu führen.
+                    Für eine Stabile & starke Psyche. Erlebe eine Welt voller Potenzial und lerne,
+                    dein Leben bewusst zu lenken und zu gestalten. Nimm dein Leben in die Hand und wage
+                    den ersten Schritt in Richtung
+                    Veränderung : starte jetzt deine Veränderung!  Link zur Anmeldung
+                  </Typography>
+                  <Typography  color={'secondary'}>
+                    Kostenlos. Anonym.Hochwerig
                   </Typography>
           </Box>
     </Grid>
