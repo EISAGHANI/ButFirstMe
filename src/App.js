@@ -17,15 +17,15 @@ function App() {
   return (
     <ThemeProvider theme= {theme}>
       <Routes>
-        <Route path= '/'  element= {<Navbar /> } >
+        {/* <Route path= '/'  element= {<Navbar /> } > */}
             <Route index element={<Home />} />
-            <Route path= '/preise' element= {<Preise />} />
+            {/* <Route path= '/preise' element= {<Preise />} />
             <Route path= '/magazin' element= {<Magazin />} />
             <Route path= '/uberuns' element= {<Uberuns />} />
             <Route path= '/kontakt' element= {<Kontakt />} />
             <Route path= '/signup' element= {<SignUp />} />
-            <Route path= '/signIn' element= {<SignIn />} />
-        </Route>
+            <Route path= '/signIn' element= {<SignIn />} /> */}
+        {/* </Route> */}
 
         
       </Routes>
