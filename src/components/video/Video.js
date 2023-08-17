@@ -39,7 +39,7 @@ const Video = () => {
 
   return (
     <div className='main'>
-        <video src={ videoBg } ref={videoRef}/> 
+        <video src={ videoBg } ref={videoRef} playsInline /> 
         <button onClick={handlePlayPauseToggle} className="play-button">{playing ? "Pause" : "Play"}</button>
     </div>
   )
